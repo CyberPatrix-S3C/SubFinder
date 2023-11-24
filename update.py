@@ -60,7 +60,7 @@ def update_func(uname, repo):
 		pass
 
 userName = "CyberPatrix-S3C"
-repository = "Sub-Grabber"
+repository = "SubFinder"
 
 # invoking the update_func() function with the arguments.
 update_func(userName, repository)
