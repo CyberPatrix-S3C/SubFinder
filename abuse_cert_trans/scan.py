@@ -197,6 +197,7 @@ class Abuse_certificate_transparency:
 
 			for index, sub in enumerate(abuse.request_json()):
 				print(Fore.GREEN+str(index+1),Fore.RED+str(sub))
+				time.sleep(2)
 
 			print('\n',Fore.GREEN+'''\n\n{!} There are %s %s %s''' %
 				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains for this domain.'))
@@ -212,6 +213,7 @@ class Abuse_certificate_transparency:
 
 			for index, sub in enumerate(active_subdomains):
 				print(Fore.GREEN+str(index+1), Fore.WHITE+Back.BLACK+str(sub[0]), Fore.RED+Back.BLACK+str(sub[1]), Fore.BLUE+Back.BLACK+str(sub[2]))
+				time.sleep(2)
 
 		except Exception as e:
 			print(f'active_subdomains//Error: {e}')
